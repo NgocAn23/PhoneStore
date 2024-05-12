@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/background4"
+    tools:context="com.manager.appbanhang.activity.DangNhapActivity">
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/a2">
+    </ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Xin chào !"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold">
+        </TextView>
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        app:layout_constraintTop_toBottomOf="@+id/txtdangnhap"
+        android:layout_marginTop="40dp"
+        android:id="@+id/line1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="Email"
+            android:id="@+id/email"
+            android:inputType="textEmailAddress"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:drawablePadding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <!--            android:drawableLeft="@drawable/ic_email_24"-->
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:layout_constraintTop_toBottomOf="@+id/line1"
+        android:layout_marginTop="20dp"
+        android:id="@+id/line2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:endIconMode="password_toggle"
+        android:textColorHint="@color/white" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="Pasword"
+            android:id="@+id/pass"
+            android:drawablePadding="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <!--            android:drawableStart="@drawable/ic_key_24"-->
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btndangnhap"
+        app:layout_constraintTop_toBottomOf="@id/line2"
+        android:background="@drawable/background_button"
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="25dp"
+        android:textSize="14dp"
+        android:text="Đăng nhập"
+        android:textColor="#A370E3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+    <LinearLayout
+        android:id="@+id/line6"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/btndangnhap"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Nếu chưa có tài khoản?"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/txtdangki"
+            android:layout_marginLeft="10dp"
+            android:text="Đăng ký"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

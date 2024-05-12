@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.manager.appbanhang.activity.LienHeActivity"
+    android:background="@drawable/background4"
+    android:orientation="vertical">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="15dp"
+            android:textStyle="normal|bold"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Liên hệ với chúng tôi"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@drawable/boder"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:padding="15dp"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:src="@drawable/user"/>
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:textSize="25sp"
+                android:text="Họ và tên: Admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:background="@drawable/boder"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <ImageView
+                android:padding="5dp"
+                android:layout_width="40dp"
+                android:layout_height="47dp"
+                android:src="@drawable/mail" />
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:textSize="22sp"
+                android:text="Email: Admin@gmail.com"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:background="@drawable/boder"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <ImageView
+                android:padding="5dp"
+                android:layout_width="40dp"
+                android:layout_height="47dp"
+                android:src="@drawable/phone" />
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:textSize="25sp"
+                android:text="Số điện thoại"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
